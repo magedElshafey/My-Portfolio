@@ -1,0 +1,19 @@
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.megz {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.maged {
+    color: var(--secondColor) !important;
+}

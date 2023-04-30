@@ -1,0 +1,7 @@
+.title {
+    color: var(--secondColor);
+    text-transform: uppercase;
+}
+.question{
+    word-spacing: 2px;
+}

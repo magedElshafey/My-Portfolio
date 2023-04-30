@@ -1,0 +1,62 @@
+.navContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  
+    z-index: 99999999;
+ 
+}
+.logo {
+    width: 30px;
+  
+    object-fit: cover;
+}
+
+.menuIcon {
+    cursor: pointer;
+    color: var(--secondColor);
+}
+.sideBar {
+    width: 320px;
+    min-height: 100vh;
+  
+    position: fixed;
+    top: 0;
+    background-color: white;
+   
+    z-index: 9999;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.show {
+    right: 0;
+}
+.hide {
+    right: -300%;
+}
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.closeIcon:hover {
+    color: var(--secondColor);
+}
+.setShadow {
+    background-color: var(--secondColor);
+box-shadow: var(--mainColor) 0px 1px 4px;
+}
+.removeShadow {
+    background-color: transparent;
+    box-shadow: none;
+}
