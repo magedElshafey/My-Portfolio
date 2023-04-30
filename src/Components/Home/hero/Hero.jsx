@@ -23,7 +23,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div className={`container ${style.mainContainer}`}>
+    <div className={`pt-5 mt-5  ${style.mainContainer}`}>
       <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
         <div>
           <img

@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     width: 100vw;
-  
     z-index: 99999999;
  
 }
@@ -53,8 +52,8 @@
     color: var(--secondColor);
 }
 .setShadow {
-    background-color: var(--secondColor);
-box-shadow: var(--mainColor) 0px 1px 4px;
+    background-color: var(--mainColor);
+box-shadow: #ddd 0px 1px 4px;
 }
 .removeShadow {
     background-color: transparent;

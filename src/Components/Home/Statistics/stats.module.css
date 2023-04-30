@@ -1,0 +1,7 @@
+.mainBox {
+  background-color: var(--mainColor);
+}
+
+.num {
+  color: var(--secondColor);
+}
