@@ -1,7 +1,7 @@
 .box {
   width: 40px;
   height: 40px;
-  background-color: var(--mainColor);
+  background-color: var(--secondColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,5 +30,13 @@
 }
 
 .icon {
-  color: var(--secondColor) !important;
+  color: white !important;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.box:hover .icon {
+  color: #0d6efd !important;
 }

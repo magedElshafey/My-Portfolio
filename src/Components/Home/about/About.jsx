@@ -4,7 +4,7 @@ import MainTitle from "../../Utiltes/mainTitle/MainTitle";
 import about from "../../../assets/about.jpg";
 const About = () => {
   return (
-    <div id="about" className="container py-5 my-5">
+    <div id="about" className="container my-5 py-5">
       <MainTitle title="About" question="who I Am ? " />
       <div className="row my-5 justify-content-center align-items-center">
         <div className="col-12 col-md-6 mb-4 mb-md-0">

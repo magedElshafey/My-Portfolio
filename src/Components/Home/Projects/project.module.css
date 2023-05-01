@@ -1,0 +1,72 @@
+.mainContainer {
+background-color: var(--sectionColor);
+padding: 30px 15px;
+
+}
+
+.projectContainer {
+    padding: 0;
+    background-color: var(--mainColor);
+   
+}
+
+.mainImg {
+
+    width: 100% !important;
+    height: 250px;
+    padding: 0;
+    object-fit: cover;
+}
+.name {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.name:hover {
+    color : var(--yellowColor) !important ; 
+}
+.link {
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    padding: 7px 15px;
+    background-color: white;
+    color: var(--mainColor);
+    z-index: 3;
+    font-weight: bold;
+    position: relative;
+    line-height: 40px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.link:hover {
+    color: white;
+}
+.link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--secondColor);
+    width: 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.link:hover::before {
+    z-index: -1;
+    width: 100%;
+}

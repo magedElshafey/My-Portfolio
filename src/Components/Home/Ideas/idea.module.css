@@ -1,0 +1,48 @@
+.mainContainer {
+    height: 100vh;
+}
+.maged {
+    color: var(--yellowColor);
+    font-size: 8rem;
+    font-weight: bolder;
+    letter-spacing: 8px;
+ 
+}
+@media screen and (max-width : 767px) {
+        .maged {
+            font-size: 4rem;
+        }
+}
+.elshafey {
+   
+    background-color: var(--yellowColor);
+    padding: 10px;
+    color: var(--mainColor);
+    text-align: center;
+     font-size: 3rem; 
+      letter-spacing: 8px;
+    font-weight: bold;
+    
+     mix-blend-mode: exclusion;
+}
+@media screen and (max-width : 767px) {
+        .elshafey {
+            font-size: 2rem;
+        }
+}
+.idea {
+    color: var(--yellowColor);
+    letter-spacing: 8px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+@media screen and (max-width : 767px) {
+        .idea {
+            font-size: 1rem;
+        }
+}
+.mainImg {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}

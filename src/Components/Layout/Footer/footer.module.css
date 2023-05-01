@@ -1,5 +1,8 @@
 .footerContainer {
     width: 100vw;
-    background-color: var(--secondColor);
+    background-color: #201d29;
     padding: 10px;
+}
+.megz {
+    color: var(--yellowColor);
 }

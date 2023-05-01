@@ -1,7 +1,12 @@
+.mainContainer {
+  background-color: var(--sectionColor);
+  padding: 30px 15px;
+}
 .mainBox {
   border-radius: 8px;
   transition: 0.5s;
-  height: 400px;
+  height: 420px;
+  background-color: var(--mainColor);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
@@ -19,7 +24,18 @@
   -ms-transform: translateY(-25px);
   -o-transform: translateY(-25px);
 }
-
+.mainImg {
+  position: absolute;
+  left: 50%;
+  top: -75px;
+  height: 120px !important;
+  object-fit: cover;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
 .red {
   background-color: var(--secondColor);
   opacity: 0.8;
