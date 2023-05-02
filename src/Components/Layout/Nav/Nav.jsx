@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import style from "./Nav.module.css";
 import { navLinks } from "../../../fakers/data.js";
 import logo from "../../../assets/logo.png";
-
+import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Social from "../../Utiltes/Social/Social";
 const Nav = () => {
   const [showSideBar, setShowSideBar] = useState(false);
-
+  const [activeLink, setActiveLink] = useState("");
+  const handleNavLinkClick = (link) => {
+    setActiveLink(link.title);
+  };
   return (
     <div className={`${style.mainContainer} py-3`}>
       <div className="container">
@@ -21,9 +24,17 @@ const Nav = () => {
           >
             {navLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.path} className="navLinks">
+                <HashLink
+                  to={`/${link.path}`}
+                  onClick={() => handleNavLinkClick(link)}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="navLinks"
+                >
                   {link.title}
-                </a>
+                </HashLink>
               </li>
             ))}
           </ul>
@@ -52,9 +63,9 @@ const Nav = () => {
                     key={index}
                     onClick={() => setShowSideBar(false)}
                   >
-                    <a href={link.path} className="sideBarLinks">
+                    <HashLink href={`/${link.path}`} className="sideBarLinks">
                       {link.title}
-                    </a>
+                    </HashLink>
                   </li>
                 ))}
               </ul>

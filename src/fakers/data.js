@@ -25,7 +25,6 @@ import qtab from "../assets/projects/q-tab.png";
 import switchIo from "../assets/projects/switch.png";
 import alMosawi from "../assets/projects/almosawi.png";
 import dom from "../assets/projects/doom.png";
-import beaches from "../assets/projects/beaches.png";
 // nav bar content
 export const navLinks = [
   {
@@ -62,7 +61,7 @@ export const navLinks = [
 export const social = [
   {
     img: mail,
-    ref: "nailto:magedelshafey98@gmail.com",
+    ref: "mailto:magedelshafey98@gmail.com",
   },
   {
     img: whats,
