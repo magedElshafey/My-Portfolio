@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2f2f24f.css",
+    "main.js": "/static/js/main.a4f6d308.js",
+    "static/media/idea.jpg": "/static/media/idea.e94a3086fcad3f27b71b.jpg",
+    "static/media/doom.png": "/static/media/doom.6f928b46d6b50d7dda2b.png",
+    "static/media/beaches.png": "/static/media/beaches.64856630bab52dc9379f.png",
+    "static/media/almosawi.png": "/static/media/almosawi.afccf2412f69d7c48874.png",
+    "static/media/fitness.png": "/static/media/fitness.262c025946811c3cf6af.png",
+    "static/media/elshorouk.png": "/static/media/elshorouk.72847883868579cf1453.png",
+    "static/media/q-tab.png": "/static/media/q-tab.0c0555c0548cdab5e358.png",
+    "static/media/megz-01.jpeg": "/static/media/megz-01.84dd39fe5b659a80cc47.jpeg",
+    "static/media/switch.png": "/static/media/switch.e6e7216b3f470938b35c.png",
+    "static/media/megz-04.jpg": "/static/media/megz-04.3513979e057fe01f538d.jpg",
+    "static/media/megz-05.jpg": "/static/media/megz-05.0a29181f23987640d265.jpg",
+    "static/media/megz-03.jpg": "/static/media/megz-03.4c1b4e734d4b14701e65.jpg",
+    "static/media/megz-02.jpg": "/static/media/megz-02.2030bf7c5cad937a0cef.jpg",
+    "static/media/megz-06.jpg": "/static/media/megz-06.95549a4790e0533ede9f.jpg",
+    "static/media/about.jpg": "/static/media/about.883c7570cda9660c658d.jpg",
+    "static/media/skills.avif": "/static/media/skills.52c217ccebd532099e31.avif",
+    "static/media/logo.png": "/static/media/logo.74a0cee29b47318d772f.png",
+    "static/media/contact.avif": "/static/media/contact.d8cea596dde4a9ba1977.avif",
+    "index.html": "/index.html",
+    "main.a2f2f24f.css.map": "/static/css/main.a2f2f24f.css.map",
+    "main.a4f6d308.js.map": "/static/js/main.a4f6d308.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2f2f24f.css",
+    "static/js/main.a4f6d308.js"
+  ]
+}
