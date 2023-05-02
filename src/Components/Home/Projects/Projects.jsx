@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./project.module.css";
 import { projects } from "../../../fakers/data";
 import MainTitle from "../../Utiltes/mainTitle/MainTitle";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Projects = () => {
-  const [showOverLay, setShowOverlay] = useState(false);
+  const navigate = useNavigate();
   return (
-    <div id="project" className={`${style.mainContainer}`}>
+    <div id="projects" className={`${style.mainContainer}`}>
       <div className="container">
         <MainTitle title="projects" question="what I have built ? " />
-        <div className="row gap-3 mt-5 pt-5">
+        <div className="row justify-content-center gap-5 mt-5 pt-5">
           {projects.map((item, index) => (
             <div
               data-aos="fade-up"
               data-aos-delay={item.delay}
-              className={`col-12  mx-auto col-md-6 col-lg-4 mb-0 mb-md-3 ${style.projectContainer}`}
+              className={`col-12 p-0 col-md-6 col-lg-4 mb-0 mb-md-3 ${style.projectContainer}`}
             >
               <img
                 data-aos="zoom-in-right"
@@ -22,7 +23,7 @@ const Projects = () => {
                 key={index}
                 alt="project/img"
                 src={item.img}
-                className={`img-fluid ${style.mainImg}`}
+                className={` ${style.mainImg}`}
               />
               <div className="p-4">
                 <Link className="link mb-5" to={`${item.id}`}>
@@ -33,9 +34,12 @@ const Projects = () => {
                 <p className="lh text-white-50 mb-5">
                   {item.desc.substring(0, 100) + "...."}
                 </p>
-                <Link to={`${item.id}`} className={`${style.link}  pb-3`}>
+                <button
+                  onClick={() => navigate(`/${item.id}`)}
+                  className="mainBtn d-flex justify-content-center"
+                >
                   More Info
-                </Link>
+                </button>
               </div>
             </div>
           ))}

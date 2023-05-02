@@ -42,6 +42,7 @@
   width: 100%;
 }
 .techContainer {
+  height: 300px;
   background-color: #ddd ;
   border-radius: 8px;
   -webkit-border-radius: 8px;

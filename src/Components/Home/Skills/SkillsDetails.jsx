@@ -40,11 +40,11 @@ const SkillsDetails = () => {
             data-aos-delay="500"
             src={skillsImg}
             alt="skills/img"
-            className={` ${style.mainImg}`}
+            className={` img-fluid ${style.mainImg}`}
           />
         </div>
         <div className="col-12 col-md-6 mb-4 mb-md-0">
-          <div className="row gap-5">
+          <div className="row justify-content-center gap-5">
             {skills.map((skill, index) => (
               <div data-aos="fade-up" key={index} className="col-12 col-md-5">
                 <p className="text-white fw-bold mb-1">{skill.name}</p>

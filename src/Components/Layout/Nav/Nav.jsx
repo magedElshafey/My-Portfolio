@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "./Nav.module.css";
 import { navLinks } from "../../../fakers/data.js";
 import logo from "../../../assets/logo.png";
@@ -7,21 +7,8 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Social from "../../Utiltes/Social/Social";
 const Nav = () => {
- const [showSideBar, setShowSideBar] = useState(false);
-  // const [shadow, setShadow] = useState(false);
-  // useEffect(() => {
-  // 	const handleScroll = () => {
-  // 		if (window.scrollY > 100) {
-  // 			setShadow(true);
-  // 		} else {
-  // 			setShadow(false);
-  // 		}
-  // 	};
-  // 	document.addEventListener('scroll', handleScroll);
-  // 	return () => {
-  // 		document.removeEventListener('scroll', handleScroll);
-  // 	};
-  // }, []);
+  const [showSideBar, setShowSideBar] = useState(false);
+
   return (
     <div className={`${style.mainContainer} py-3`}>
       <div className="container">
@@ -34,9 +21,9 @@ const Nav = () => {
           >
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink to={link.path} className="navLinks">
+                <a href={link.path} className="navLinks">
                   {link.title}
-                </NavLink>
+                </a>
               </li>
             ))}
           </ul>
@@ -65,9 +52,9 @@ const Nav = () => {
                     key={index}
                     onClick={() => setShowSideBar(false)}
                   >
-                    <NavLink to={link.path} className="sideBarLinks">
+                    <a href={link.path} className="sideBarLinks">
                       {link.title}
-                    </NavLink>
+                    </a>
                   </li>
                 ))}
               </ul>

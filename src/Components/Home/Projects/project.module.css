@@ -12,10 +12,10 @@ padding: 30px 15px;
 
 .mainImg {
 
-    width: 100% !important;
-    height: 250px;
-    padding: 0;
-    object-fit: cover;
+    width: 100% !important; 
+    height: 250px; 
+    padding: 0 !important;
+  object-fit: cover;
 }
 .name {
     transition: 0.3s;
@@ -27,7 +27,7 @@ padding: 30px 15px;
 .name:hover {
     color : var(--yellowColor) !important ; 
 }
-.link {
+/* .link {
     text-decoration: none;
     border: none;
     display: flex;
@@ -69,4 +69,4 @@ padding: 30px 15px;
 .link:hover::before {
     z-index: -1;
     width: 100%;
-}
+} */
