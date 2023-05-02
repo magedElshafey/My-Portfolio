@@ -68,6 +68,7 @@ ul {
   color: var(--mainColor);
   z-index: 3;
   text-align: center;
+  width: 200px;
   margin: 0 auto;
   position: relative;
   transition: 0.5s;
@@ -116,4 +117,7 @@ ul {
 .link {
   text-decoration: none;
  
+}
+.mt {
+  margin-top: 200px;
 }

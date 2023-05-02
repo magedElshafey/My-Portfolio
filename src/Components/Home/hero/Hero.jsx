@@ -26,51 +26,30 @@ const Hero = () => {
   const [selectedImg, setSelectedImg] = useState(0);
   const [imgData, setImgData] = useState(megzImg);
   return (
-    <div className={style.mainContainer}>
-      <div className="d-flex justify-content-between align-items-center flex-column flex-md-row gap-5">
-        <div className="d-flex  align-items-center flex-column gap-4">
-          <img
-            data-aos="zoom-in-right"
-            data-aos-delay="500"
-            className={style.megz}
-            alt="megz/img"
-            src={imgData[selectedImg]}
-          />
-          <div className="d-flex align-items-center gap-3 flex-wrap">
-            {imgData.map((item, index) => (
-              <img
-                key={index}
-                className={style.subImg}
-                alt="megz/images"
-                src={item}
-                onClick={() => setSelectedImg(index)}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="d-flex flex-column justify-content-center align-items-center">
-          <IntroTitle />
-          <h1 data-aos="fade-down" data-aos-delay="500" className="text-white">
-            Hello I'm{" "}
-            <p
-              data-aos="fade-up"
-              data-aos-delay="600"
-              className={`${style.maged} fw-bolder fs-2`}
-            >
-              Maged Elshafey
-            </p>
-          </h1>
-          <h2
-            data-aos="fade-down"
-            data-aos-delay="700"
-            className="text-white"
-            ref={el}
-          ></h2>
-          <Icons />
-          <button className="mainBtn mt-5">Download my CV</button>
-        </div>
-      </div>
-    </div>
+		<div className={`${style.mainContainer} mt mb-5 py-5`}>
+			<div className='d-flex justify-content-between align-items-center flex-column flex-md-row gap-5'>
+				<div className='d-flex  align-items-center flex-column gap-4'>
+					<img data-aos='zoom-in-right' data-aos-delay='500' className={style.megz} alt='megz/img' src={imgData[selectedImg]} />
+					<div className='d-flex align-items-center gap-3 flex-wrap'>
+						{imgData.map((item, index) => (
+							<img key={index} className={style.subImg} alt='megz/images' src={item} onClick={() => setSelectedImg(index)} />
+						))}
+					</div>
+				</div>
+				<div className='d-flex flex-column justify-content-center align-items-center'>
+					<IntroTitle />
+					<h1 data-aos='fade-down' data-aos-delay='500' className='text-white'>
+						Hello I'm{' '}
+						<p data-aos='fade-up' data-aos-delay='600' className={`${style.maged} fw-bolder fs-2`}>
+							Maged Elshafey
+						</p>
+					</h1>
+					<h2 data-aos='fade-down' data-aos-delay='700' className='text-white' ref={el}></h2>
+					<Icons />
+					<button className='mainBtn mt-5'>Download my CV</button>
+				</div>
+			</div>
+		</div>
   );
 };
 

@@ -1,35 +1,22 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import style from './stats.module.css';
 import { stats } from '../../../fakers/data';
-import StatsBox from './StatsBox/StatsBox';
+import MainTitle from '../../Utiltes/mainTitle/MainTitle';
 const Statistics = () => {
-	const [shouldAnimate, setShouldAnimate] = useState(false);
-	const [number, setNumber] = useState(0);
-	console.log('hello from number', number);
-	useEffect(() => {
-		if (window.scrollY >= el.current.offsetTop - 2000) {
-			setShouldAnimate(true);
-		} else {
-			setShouldAnimate(false);
-		}
-	}, []);
-	useEffect(() => {
-		if (shouldAnimate) {
-			stats.forEach((item) => {
-				let goalNum = parseInt(item.num);
-				console.log(goalNum);
-				setNumber(goalNum);
-			});
-		}
-	}, [shouldAnimate]);
-	const el = useRef();
-
 	return (
-		<div ref={el} id='stats' className='container py-5 my-5'>
-			<div className='row gap-5 justify-content-center'>
-				{stats.map((item, index) => (
-					<div className='col-12 col-md-4 mb-3 mb-md-0' key={index}></div>
-				))}
+		<div id='stats' data-aos='fade-up' data-aos-delay='400' data-aos-offset='100' className={style.mainContainer}>
+			<div className='container'>
+				<MainTitle title='statistics' />
+				<div className='d-flex justify-content-center align-items-center flex-column flex-md-row flex-wrap gap-5 my-5 '>
+					{stats.map((item, index) => (
+						<div data-aos='zoom-in-right' data-aos-delay={item.delay} className={`d-flex justify-content-center align-items-center p-3 ${style.mainBox}`} key={index}>
+							<div className='text-center'>
+								<p className={`fw-bolder mb-0 ${style.num}`}>{item.num}</p>
+								<p className={` ${style.title}`}>{item.title}</p>
+							</div>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);

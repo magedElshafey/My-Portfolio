@@ -1,7 +1,26 @@
+.mainContainer {
+  background-color: var(--sectionColor);
+  padding: 30px 15px;
+}
+
 .mainBox {
   background-color: var(--mainColor);
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.title {
+  color: var(--yellowColor);
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .num {
   color: var(--secondColor);
+  font-size: 28px;
 }

@@ -1,0 +1,48 @@
+.box,
+.phone,
+.whats {
+  position: fixed;
+  z-index: 99999999;
+}
+
+.box {
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondColor);
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+
+.show,
+.phone,
+.whats {
+  right: 25px;
+}
+
+.phone {
+  bottom: 85px;
+}
+
+.whats {
+  bottom: 145px;
+}
+
+.hide {
+  right: -300%;
+
+}
