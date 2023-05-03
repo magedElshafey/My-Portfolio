@@ -46,7 +46,11 @@ const SkillsDetails = () => {
         <div className="col-12 col-md-6 mb-4 mb-md-0">
           <div className="row  gap-5">
             {skills.map((skill, index) => (
-              <div data-aos="fade-up" key={index} className="col-12 col-md-5">
+              <div
+                data-aos="fade-up"
+                key={index}
+                className="col-12 justify-content-center col-md-5"
+              >
                 <p className="text-white fw-bold mb-1">{skill.name}</p>
                 <div className={style.wraper}>
                   <div

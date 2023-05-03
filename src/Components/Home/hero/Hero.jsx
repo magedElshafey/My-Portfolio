@@ -4,6 +4,7 @@ import Typed from "typed.js";
 import IntroTitle from "../../Utiltes/introTitle/IntroTitle";
 import Icons from "../../Utiltes/icons/Icons";
 import { megzImg } from "../../../fakers/data.js";
+import Resume from "../Resume";
 const Hero = () => {
   const el = useRef();
   const options = {
@@ -25,28 +26,8 @@ const Hero = () => {
   const [selectedImg, setSelectedImg] = useState(0);
   const [imgData, setImgData] = useState(megzImg);
   return (
-    <div className={`container ${style.mainContainer} mt mb-5 py-5`}>
+    <div className={`container ${style.mainContainer} mt mb-5  py-5`}>
       <div className="d-flex  align-items-center flex-column flex-md-row gap-5">
-        <div className="d-flex  align-items-center justify-content-center flex-column gap-4">
-          <img
-            data-aos="zoom-in-right"
-            data-aos-delay="500"
-            className={style.megz}
-            alt="megz/img"
-            src={imgData[selectedImg]}
-          />
-          <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-            {imgData.map((item, index) => (
-              <img
-                key={index}
-                className={style.subImg}
-                alt="megz/images"
-                src={item}
-                onClick={() => setSelectedImg(index)}
-              />
-            ))}
-          </div>
-        </div>
         <div className="d-flex flex-column justify-content-center align-items-center">
           <IntroTitle />
           <h1 data-aos="fade-down" data-aos-delay="500" className="text-white">
@@ -66,7 +47,29 @@ const Hero = () => {
             ref={el}
           ></h2>
           <Icons />
-          <button className="mainBtn mt-5">Download my CV</button>
+          <Resume />
+        </div>
+        <div className="d-flex  align-items-center justify-content-center flex-column gap-4">
+          <img
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            className={style.megz}
+            alt="megz/img"
+            src={imgData[selectedImg]}
+          />
+          <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+            {imgData.map((item, index) => (
+              <img
+                key={index}
+                data-aos="zoom-in-right"
+                data-aos-delay="600"
+                className={style.subImg}
+                alt="megz/images"
+                src={item}
+                onClick={() => setSelectedImg(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

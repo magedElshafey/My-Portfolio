@@ -32,8 +32,8 @@ export const navLinks = [
     path: "/",
   },
   {
-    title: "Services",
-    path: "#serv",
+    title: "Statistics",
+    path: "#stats",
   },
   {
     title: "About",
@@ -44,18 +44,16 @@ export const navLinks = [
     path: "#projects",
   },
   {
+    title: "contact",
+    path: "#contact",
+  },
+  {
     title: "Skills",
     path: "#skills",
   },
-
   {
-    title: "Statistics",
-    path: "#stats",
-  },
-
-  {
-    title: "contact",
-    path: "#contact",
+    title: "Services",
+    path: "#serv",
   },
 ];
 export const social = [

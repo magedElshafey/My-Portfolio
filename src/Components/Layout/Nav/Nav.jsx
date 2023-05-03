@@ -25,7 +25,7 @@ const Nav = () => {
             {navLinks.map((link, index) => (
               <li key={index}>
                 <HashLink
-                  to={`/${link.path}`}
+                  to={link.path === "/" ? link.path : "/" + link.path}
                   onClick={() => handleNavLinkClick(link)}
                   activeClass="active"
                   spy={true}
@@ -49,7 +49,7 @@ const Nav = () => {
                 showSideBar ? style.show : style.hide
               }`}
             >
-              <div className="position-relative mb-5 pb-5">
+              <div className="position-relative mb-5">
                 <AiOutlineClose
                   size={25}
                   onClick={() => setShowSideBar(false)}
@@ -58,18 +58,20 @@ const Nav = () => {
               </div>
               <ul className="py-5">
                 {navLinks.map((link, index) => (
-                  <li
-                    className="mb-5 sideBarMenuu"
-                    key={index}
-                    onClick={() => setShowSideBar(false)}
-                  >
-                    <HashLink href={`/${link.path}`} className="sideBarLinks">
+                  <li className="pb-5   text-white" key={index}>
+                    <HashLink
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      onClick={() => setShowSideBar(false)}
+                      to={link.path === "/" ? link.path : "/" + link.path}
+                      className="sideBarLinks"
+                    >
                       {link.title}
                     </HashLink>
                   </li>
                 ))}
               </ul>
-              <Social />
             </div>
           </div>
         </div>

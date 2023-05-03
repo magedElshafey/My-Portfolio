@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a2f2f24f.css",
-    "main.js": "/static/js/main.56864c65.js",
+    "main.js": "/static/js/main.c68d622f.js",
     "static/media/idea.jpg": "/static/media/idea.e94a3086fcad3f27b71b.jpg",
     "static/media/doom.png": "/static/media/doom.6f928b46d6b50d7dda2b.png",
     "static/media/almosawi.png": "/static/media/almosawi.afccf2412f69d7c48874.png",
@@ -21,10 +21,10 @@
     "static/media/contact.avif": "/static/media/contact.d8cea596dde4a9ba1977.avif",
     "index.html": "/index.html",
     "main.a2f2f24f.css.map": "/static/css/main.a2f2f24f.css.map",
-    "main.56864c65.js.map": "/static/js/main.56864c65.js.map"
+    "main.c68d622f.js.map": "/static/js/main.c68d622f.js.map"
   },
   "entrypoints": [
     "static/css/main.a2f2f24f.css",
-    "static/js/main.56864c65.js"
+    "static/js/main.c68d622f.js"
   ]
 }
