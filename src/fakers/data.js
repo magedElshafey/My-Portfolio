@@ -32,28 +32,28 @@ export const navLinks = [
     path: "/",
   },
   {
-    title: "Statistics",
-    path: "#stats",
-  },
-  {
     title: "About",
     path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "contact",
-    path: "#contact",
   },
   {
     title: "Skills",
     path: "#skills",
   },
   {
+    title: "Projects",
+    path: "#projects",
+  },
+  {
     title: "Services",
     path: "#serv",
+  },
+  {
+    title: "contact",
+    path: "#contact",
+  },
+  {
+    title: "Statistics",
+    path: "#stats",
   },
 ];
 export const social = [

@@ -36,7 +36,7 @@ const SkillsDetails = () => {
       <div className="row justify-content-center align-items-center mt-5 pt-5">
         <div className="col-12 col-md-6 mb-4 mb-md-0">
           <img
-            data-aos="zoom-in-right"
+            data-aos="zoom-in"
             data-aos-delay="500"
             src={skillsImg}
             alt="skills/img"
